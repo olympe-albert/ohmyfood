@@ -1,0 +1,181 @@
+body
+{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/** header **/
+
+header
+{
+    background-color: $maincolor;
+    width: 100%;
+    height: 80px;
+}
+
+h1
+{
+    font-family: 'Metropolis-ExtraBold';
+    font-size: 2.6em;
+    text-align: center;
+    margin: 0px;
+    padding-top: 14px;
+}
+
+h1 a
+{
+    color: $yellow;
+    text-decoration: none;
+}
+
+/** main **/
+
+main
+{
+    background-color: $white;
+    padding: 30px 70px;
+}
+
+.menu
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    &__front
+    {
+        height: 280px;
+        width: 200px;
+        box-shadow: 5px 5px 10px black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &--1
+        {
+            background-color: rgb(255, 205, 205);
+        }
+        &--2
+        {
+            background-color: rgb(255, 240, 255);
+        }
+        &--3
+        {
+            background-color: rgb(240, 240, 255);
+        }
+        &--4
+        {
+            background-color: rgb(240, 255, 240);
+        }
+    }
+}
+
+.link 
+{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title
+{
+    &--1
+    {
+        font-family: 'jr!ha___-webfont';
+        font-size: 1.2em;
+        color: rgb(34, 17, 14);
+    }
+    &--2
+    {
+        font-family: 'FontleroyBrown-webfont';
+        font-size: 1.8em;
+        background: linear-gradient(to right, rgb(247, 177, 72) 0%, rgb(146, 23, 247));
+        -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+    }
+    &--3
+    {
+        font-family: 'DancingScript-VariableFont_wght';
+        font-size: 1.2em;
+        background: linear-gradient(to right, rgb(124, 221, 245) 0%, rgb(23, 64, 247));
+        -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+    }
+    &--4
+    {
+        font-family: 'KaushanScript-Regular';
+        font-size: 1.2em;
+        background: linear-gradient(to right, rgb(21, 190, 6) 0%, rgb(144, 247, 134));
+        -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+    }
+}
+
+.subtitle
+{
+    font-family: 'Metropolis-Regular';
+    &--1
+    {
+        color: rgb(34, 17, 14);
+    }
+    &--2
+    {
+        color: rgb(247, 177, 72);
+    }
+    &--3
+    {
+        color: rgb(23, 64, 247);
+    }
+    &--4
+    {
+        color: rgb(21, 190, 6);
+    }
+}
+
+.bouton-next
+{
+    margin: auto;
+    margin-top: 40px;
+    width: 200px;
+    height: 45px;
+    background-color: $maincolor;
+    border-radius: 15px;
+    position: relative;
+}
+
+.bouton-next p
+{
+    font-family: 'Metropolis-Regular';
+    font-size: 1em;
+    color: $yellow;
+    position: absolute;
+    left: 20px;
+    top: 0px;
+}
+
+/** footer **/
+
+footer
+{
+    width: 100%;
+    height: 60px;
+    background-color: $maincolor;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    bottom: 0;
+}
+
+.bouton-footer
+{
+    margin: 15px;
+}
+
+.bouton-footer p
+{
+    font-family: 'Metropolis-Regular';
+    font-size: 0.7em;
+    color: $yellow;
+}
+
