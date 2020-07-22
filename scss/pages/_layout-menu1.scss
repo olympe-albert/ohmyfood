@@ -1,0 +1,122 @@
+h2
+{
+    font-family: 'Metropolis-Regular';
+    font-size: 1.6em;
+    color: rgb(20, 20, 20);
+    text-align: center;
+}
+
+.back
+{
+    width: 700px;
+    height: 1200px;
+    background-color: rgb(255, 205, 205);
+    box-shadow: 5px 5px 10px black;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--menu2
+    {
+        background-color: rgb(255, 240, 255);
+    }
+    &--menu3
+    {
+        background-color: rgb(240, 240, 255);
+    }
+    &--menu4
+    {
+        background-color: rgb(240, 255, 240);
+    }
+}
+
+.content
+{
+    width: 600px;
+}
+
+.intro
+{
+    font-family: 'jr!ha___-webfont';
+    font-size: 2em;
+    color: rgb(34, 17, 14);
+    &--menu2
+    {
+        font-family: 'FontleroyBrown-webfont';
+        font-size: 4em;
+        background: linear-gradient(to right, rgb(247, 177, 72) 0%, rgb(146, 23, 247));
+        -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+    }
+    &--menu3
+    {
+        font-family: 'DancingScript-VariableFont_wght';
+        font-size: 3.6em;
+        background: linear-gradient(to right, rgb(124, 221, 245) 0%, rgb(23, 64, 247));
+        -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+    }
+    &--menu4
+    {
+        font-family: 'KaushanScript-Regular';
+        font-size: 3.6em;
+        background: linear-gradient(to right, rgb(21, 190, 6) 0%, rgb(144, 247, 134));
+        -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+    }
+}
+
+.part
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subpart
+{
+    font-family: 'Blackjack-webfont';
+    font-size: 1.6em; 
+    &--menu2
+    {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        &--1
+        {
+            color: rgb(247, 177, 72);
+        }
+        &--2
+        {
+            color: rgb(133, 29, 124);
+        }
+        &--3
+        {
+            color: rgb(185, 34, 255);
+        }
+    }
+}
+
+.courses
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Blackjack-webfont';
+    font-size: 1.2em;
+    &--menu2
+    {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        &--1
+        {
+            color: rgb(247, 177, 72);
+        }
+        &--2
+        {
+            color: rgb(133, 29, 124);
+        }
+        &--3
+        {
+            color: rgb(185, 34, 255);
+        }
+    }
+}

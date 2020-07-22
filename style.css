@@ -175,4 +175,106 @@ footer {
   color: #ffd000;
 }
 
+h2 {
+  font-family: "Metropolis-Regular";
+  font-size: 1.6em;
+  color: #141414;
+  text-align: center;
+}
+
+.back {
+  width: 700px;
+  height: 1200px;
+  background-color: #ffcdcd;
+  box-shadow: 5px 5px 10px black;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.back--menu2 {
+  background-color: #fff0ff;
+}
+.back--menu3 {
+  background-color: #f0f0ff;
+}
+.back--menu4 {
+  background-color: honeydew;
+}
+
+.content {
+  width: 600px;
+}
+
+.intro {
+  font-family: "jr!ha___-webfont";
+  font-size: 2em;
+  color: #22110e;
+}
+.intro--menu2 {
+  font-family: "FontleroyBrown-webfont";
+  font-size: 4em;
+  background: linear-gradient(to right, #f7b148 0%, #9217f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.intro--menu3 {
+  font-family: "DancingScript-VariableFont_wght";
+  font-size: 3.6em;
+  background: linear-gradient(to right, #7cddf5 0%, #1740f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.intro--menu4 {
+  font-family: "KaushanScript-Regular";
+  font-size: 3.6em;
+  background: linear-gradient(to right, #15be06 0%, #90f786);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.subpart {
+  font-family: "Blackjack-webfont";
+  font-size: 1.6em;
+}
+.subpart--menu2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.subpart--menu2--1 {
+  color: #f7b148;
+}
+.subpart--menu2--2 {
+  color: #851d7c;
+}
+.subpart--menu2--3 {
+  color: #b922ff;
+}
+
+.courses {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Blackjack-webfont";
+  font-size: 1.2em;
+}
+.courses--menu2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.courses--menu2--1 {
+  color: #f7b148;
+}
+.courses--menu2--2 {
+  color: #851d7c;
+}
+.courses--menu2--3 {
+  color: #b922ff;
+}
+
 /*# sourceMappingURL=style.css.map */
