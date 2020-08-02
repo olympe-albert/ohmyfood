@@ -1,0 +1,82 @@
+h2
+{
+    font-family: 'Metropolis-Regular';
+    font-size: 1.6em;
+    color: rgb(20, 20, 20);
+    text-align: center;
+}
+
+.back--menu2
+{
+    width: 700px;
+    height: 1200px;
+    background-color: $menu2;
+    box-shadow: 5px 5px 10px black;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content--menu2
+{
+    width: 660px;
+}
+
+.intro--menu2
+{
+    font-family: 'FontleroyBrown-webfont';
+    font-size: 4em;
+    background: linear-gradient(to right, rgb(198, 116, 18) 0%, rgb(110, 76, 204));
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.part
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.subpart--menu2
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    &--1
+    {
+        color: rgb(198, 116, 18);
+    }
+    &--2
+    {
+        color: rgb(165, 103, 163);
+    }
+    &--3
+    {
+        color: rgb(110, 76, 204);
+    }
+}
+
+.courses--menu2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    &--1
+    {
+        color: rgb(198, 116, 18);
+    }
+    &--2
+    {
+        color: rgb(165, 103, 163);
+    }
+    &--3
+    {
+        color: rgb(110, 76, 204);
+    }
+}

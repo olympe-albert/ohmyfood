@@ -27,13 +27,12 @@
   src: url(fonts/Metropolis-Regular.otf) format("truetype");
 }
 body {
-  max-width: 1200px;
   margin: auto;
 }
 
 /** header **/
 header {
-  background-color: #117750;
+  background-color: #488c74;
   width: 100%;
   height: 80px;
 }
@@ -47,7 +46,7 @@ h1 {
 }
 
 h1 a {
-  color: #ffd000;
+  color: #fbc137;
   text-decoration: none;
 }
 
@@ -55,33 +54,37 @@ h1 a {
 main {
   background-color: white;
   padding: 30px 70px;
+  max-width: 900px;
+  margin: auto;
 }
 
 .menu {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .menu__front {
-  height: 280px;
-  width: 200px;
+  height: 560px;
+  min-width: 400px;
   box-shadow: 5px 5px 10px black;
+  margin: 20px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .menu__front--1 {
-  background-color: #ffcdcd;
+  background-color: #fad7d3;
 }
 .menu__front--2 {
-  background-color: #fff0ff;
+  background-color: #fff2f4;
 }
 .menu__front--3 {
-  background-color: #f0f0ff;
+  background-color: #f7f6f7;
 }
 .menu__front--4 {
-  background-color: honeydew;
+  background-color: #fdfffc;
 }
 
 .link {
@@ -93,26 +96,26 @@ main {
 
 .title--1 {
   font-family: "jr!ha___-webfont";
-  font-size: 1.2em;
+  font-size: 1.9em;
   color: #22110e;
 }
 .title--2 {
   font-family: "FontleroyBrown-webfont";
-  font-size: 1.8em;
+  font-size: 3em;
   background: linear-gradient(to right, #f7b148 0%, #9217f7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .title--3 {
   font-family: "DancingScript-VariableFont_wght";
-  font-size: 1.2em;
+  font-size: 2em;
   background: linear-gradient(to right, #7cddf5 0%, #1740f7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .title--4 {
   font-family: "KaushanScript-Regular";
-  font-size: 1.2em;
+  font-size: 1.9em;
   background: linear-gradient(to right, #15be06 0%, #90f786);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -120,6 +123,7 @@ main {
 
 .subtitle {
   font-family: "Metropolis-Regular";
+  font-size: 1.7em;
 }
 .subtitle--1 {
   color: #22110e;
@@ -139,7 +143,7 @@ main {
   margin-top: 40px;
   width: 200px;
   height: 45px;
-  background-color: #117750;
+  background-color: #488c74;
   border-radius: 15px;
   position: relative;
 }
@@ -147,7 +151,7 @@ main {
 .bouton-next p {
   font-family: "Metropolis-Regular";
   font-size: 1em;
-  color: #ffd000;
+  color: #fbc137;
   position: absolute;
   left: 20px;
   top: 0px;
@@ -157,7 +161,7 @@ main {
 footer {
   width: 100%;
   height: 60px;
-  background-color: #117750;
+  background-color: #488c74;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -172,7 +176,7 @@ footer {
 .bouton-footer p {
   font-family: "Metropolis-Regular";
   font-size: 0.7em;
-  color: #ffd000;
+  color: #fbc137;
 }
 
 h2 {
@@ -184,26 +188,17 @@ h2 {
 
 .back {
   width: 700px;
-  height: 1200px;
-  background-color: #ffcdcd;
+  height: 1400px;
+  background-color: #fad7d3;
   box-shadow: 5px 5px 10px black;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.back--menu2 {
-  background-color: #fff0ff;
-}
-.back--menu3 {
-  background-color: #f0f0ff;
-}
-.back--menu4 {
-  background-color: honeydew;
-}
 
 .content {
-  width: 600px;
+  width: 560px;
 }
 
 .intro {
@@ -211,50 +206,17 @@ h2 {
   font-size: 2em;
   color: #22110e;
 }
-.intro--menu2 {
-  font-family: "FontleroyBrown-webfont";
-  font-size: 4em;
-  background: linear-gradient(to right, #f7b148 0%, #9217f7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.intro--menu3 {
-  font-family: "DancingScript-VariableFont_wght";
-  font-size: 3.6em;
-  background: linear-gradient(to right, #7cddf5 0%, #1740f7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.intro--menu4 {
-  font-family: "KaushanScript-Regular";
-  font-size: 3.6em;
-  background: linear-gradient(to right, #15be06 0%, #90f786);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 .part {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 .subpart {
   font-family: "Blackjack-webfont";
   font-size: 1.6em;
-}
-.subpart--menu2 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-.subpart--menu2--1 {
-  color: #f7b148;
-}
-.subpart--menu2--2 {
-  color: #851d7c;
-}
-.subpart--menu2--3 {
-  color: #b922ff;
 }
 
 .courses {
@@ -264,17 +226,121 @@ h2 {
   font-family: "Blackjack-webfont";
   font-size: 1.2em;
 }
-.courses--menu2 {
+
+.mirror {
+  transform: scaleX(-1);
+}
+
+h2 {
+  font-family: "Metropolis-Regular";
+  font-size: 1.6em;
+  color: #141414;
+  text-align: center;
+}
+
+.back--menu2 {
+  width: 700px;
+  height: 1200px;
+  background-color: #fff2f4;
+  box-shadow: 5px 5px 10px black;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content--menu2 {
+  width: 660px;
+}
+
+.intro--menu2 {
+  font-family: "FontleroyBrown-webfont";
+  font-size: 4em;
+  background: linear-gradient(to right, #c67412 0%, #6e4ccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.subpart--menu2 {
   font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.3em;
+}
+.subpart--menu2--1 {
+  color: #c67412;
+}
+.subpart--menu2--2 {
+  color: #a567a3;
+}
+.subpart--menu2--3 {
+  color: #6e4ccc;
+}
+
+.courses--menu2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 70px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1em;
 }
 .courses--menu2--1 {
-  color: #f7b148;
+  color: #c67412;
 }
 .courses--menu2--2 {
-  color: #851d7c;
+  color: #a567a3;
 }
 .courses--menu2--3 {
-  color: #b922ff;
+  color: #6e4ccc;
+}
+
+.back--menu3 {
+  width: 700px;
+  height: 1400px;
+  background-color: #f7f6f7;
+  box-shadow: 5px 5px 10px black;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro--menu3 {
+  font-family: "DancingScript-VariableFont_wght";
+  font-size: 3.6em;
+  background: linear-gradient(to right, #7cddf5 0%, #1740f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.courses--menu3 {
+  margin: 0px 50px;
+}
+
+.back--menu4 {
+  width: 700px;
+  height: 1400px;
+  background-color: #fdfffc;
+  box-shadow: 5px 5px 10px black;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro--menu4 {
+  font-family: "KaushanScript-Regular";
+  font-size: 3.6em;
+  background: linear-gradient(to right, #15be06 0%, #90f786);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */

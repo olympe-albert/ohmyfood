@@ -1,6 +1,5 @@
 body
 {
-    max-width: 1200px;
     margin: auto;
 }
 
@@ -34,6 +33,8 @@ main
 {
     background-color: $white;
     padding: 30px 70px;
+    max-width: 900px;
+    margin: auto;
 }
 
 .menu
@@ -41,30 +42,32 @@ main
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     &__front
     {
-        height: 280px;
-        width: 200px;
+        height: 560px;
+        min-width: 400px;
         box-shadow: 5px 5px 10px black;
+        margin: 20px 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         &--1
         {
-            background-color: rgb(255, 205, 205);
+            background-color: $menu1;
         }
         &--2
         {
-            background-color: rgb(255, 240, 255);
+            background-color: $menu2;
         }
         &--3
         {
-            background-color: rgb(240, 240, 255);
+            background-color: $menu3;
         }
         &--4
         {
-            background-color: rgb(240, 255, 240);
+            background-color: $menu4;
         }
     }
 }
@@ -82,13 +85,13 @@ main
     &--1
     {
         font-family: 'jr!ha___-webfont';
-        font-size: 1.2em;
+        font-size: 1.9em;
         color: rgb(34, 17, 14);
     }
     &--2
     {
         font-family: 'FontleroyBrown-webfont';
-        font-size: 1.8em;
+        font-size: 3em;
         background: linear-gradient(to right, rgb(247, 177, 72) 0%, rgb(146, 23, 247));
         -webkit-background-clip: text;
 	    -webkit-text-fill-color: transparent;
@@ -96,7 +99,7 @@ main
     &--3
     {
         font-family: 'DancingScript-VariableFont_wght';
-        font-size: 1.2em;
+        font-size: 2em;
         background: linear-gradient(to right, rgb(124, 221, 245) 0%, rgb(23, 64, 247));
         -webkit-background-clip: text;
 	    -webkit-text-fill-color: transparent;
@@ -104,7 +107,7 @@ main
     &--4
     {
         font-family: 'KaushanScript-Regular';
-        font-size: 1.2em;
+        font-size: 1.9em;
         background: linear-gradient(to right, rgb(21, 190, 6) 0%, rgb(144, 247, 134));
         -webkit-background-clip: text;
 	    -webkit-text-fill-color: transparent;
@@ -114,6 +117,7 @@ main
 .subtitle
 {
     font-family: 'Metropolis-Regular';
+    font-size: 1.7em;
     &--1
     {
         color: rgb(34, 17, 14);
