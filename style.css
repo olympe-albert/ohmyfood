@@ -34,15 +34,15 @@ body {
 header {
   background-color: #488c74;
   width: 100%;
-  height: 80px;
+  height: 60px;
 }
 
 h1 {
   font-family: "Metropolis-ExtraBold";
-  font-size: 2.6em;
+  font-size: 2.3em;
   text-align: center;
   margin: 0px;
-  padding-top: 14px;
+  padding-top: 10px;
 }
 
 h1 a {
@@ -53,7 +53,7 @@ h1 a {
 /** main **/
 main {
   background-color: white;
-  padding: 30px 70px;
+  padding: 30px 30px;
   max-width: 900px;
   margin: auto;
 }
@@ -87,6 +87,43 @@ main {
   background-color: #fdfffc;
 }
 
+@media screen and (max-width: 450px) {
+  main {
+    background-color: white;
+    padding: 20px 40px;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .menu__front {
+    height: 170px;
+    min-width: 120px;
+    max-width: 120px;
+    box-shadow: 5px 5px 10px black;
+    margin: 8px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu__front--1 {
+    background-color: #fad7d3;
+  }
+  .menu__front--2 {
+    background-color: #fff2f4;
+  }
+  .menu__front--3 {
+    background-color: #f7f6f7;
+  }
+  .menu__front--4 {
+    background-color: #fdfffc;
+  }
+}
 .link {
   text-decoration: none;
   display: flex;
@@ -138,29 +175,74 @@ main {
   color: #15be06;
 }
 
+@media screen and (max-width: 450px) {
+  .title--1 {
+    font-family: "jr!ha___-webfont";
+    font-size: 0.8em;
+    color: #22110e;
+  }
+  .title--2 {
+    font-family: "FontleroyBrown-webfont";
+    font-size: 1.1em;
+    background: linear-gradient(to right, #f7b148 0%, #9217f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .title--3 {
+    font-family: "DancingScript-VariableFont_wght";
+    font-size: 0.8em;
+    background: linear-gradient(to right, #7cddf5 0%, #1740f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .title--4 {
+    font-family: "KaushanScript-Regular";
+    font-size: 0.8em;
+    background: linear-gradient(to right, #15be06 0%, #90f786);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .subtitle {
+    font-family: "Metropolis-Regular";
+    font-size: 0.8em;
+  }
+  .subtitle--1 {
+    color: #22110e;
+  }
+  .subtitle--2 {
+    color: #f7b148;
+  }
+  .subtitle--3 {
+    color: #1740f7;
+  }
+  .subtitle--4 {
+    color: #15be06;
+  }
+}
 .bouton-next {
   margin: auto;
-  margin-top: 40px;
+  margin-top: 14px;
+  margin-bottom: 14px;
   width: 200px;
-  height: 45px;
+  height: 32px;
   background-color: #488c74;
   border-radius: 15px;
   position: relative;
 }
-
 .bouton-next p {
   font-family: "Metropolis-Regular";
   font-size: 1em;
   color: #fbc137;
   position: absolute;
   left: 20px;
-  top: 0px;
+  top: -8px;
 }
 
 /** footer **/
 footer {
   width: 100%;
-  height: 60px;
+  height: 35px;
   background-color: #488c74;
   display: flex;
   flex-direction: row;
@@ -170,7 +252,7 @@ footer {
 }
 
 .bouton-footer {
-  margin: 15px;
+  margin: 2px 10px;
 }
 
 .bouton-footer p {
@@ -186,6 +268,14 @@ h2 {
   text-align: center;
 }
 
+@media screen and (max-width: 450px) {
+  h2 {
+    font-family: "Metropolis-Regular";
+    font-size: 1.3em;
+    color: #141414;
+    text-align: center;
+  }
+}
 .back {
   width: 700px;
   height: 1400px;
@@ -201,6 +291,22 @@ h2 {
   width: 560px;
 }
 
+@media screen and (max-width: 450px) {
+  .back {
+    width: 300px;
+    height: 880px;
+    background-color: #fad7d3;
+    box-shadow: 5px 5px 10px black;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content {
+    width: 240px;
+  }
+}
 .intro {
   font-family: "jr!ha___-webfont";
   font-size: 2em;
@@ -227,6 +333,37 @@ h2 {
   font-size: 1.2em;
 }
 
+@media screen and (max-width: 450px) {
+  .intro {
+    font-family: "jr!ha___-webfont";
+    font-size: 1.2em;
+    color: #22110e;
+  }
+
+  .part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .part img {
+    width: 60px;
+  }
+
+  .subpart {
+    font-family: "Blackjack-webfont";
+    font-size: 0.9em;
+  }
+
+  .courses {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Blackjack-webfont";
+    font-size: 0.8em;
+  }
+}
 .mirror {
   transform: scaleX(-1);
 }
@@ -238,6 +375,14 @@ h2 {
   text-align: center;
 }
 
+@media screen and (max-width: 450px) {
+  h2 {
+    font-family: "Metropolis-Regular";
+    font-size: 1.3em;
+    color: #141414;
+    text-align: center;
+  }
+}
 .back--menu2 {
   width: 700px;
   height: 1200px;
@@ -253,6 +398,22 @@ h2 {
   width: 660px;
 }
 
+@media screen and (max-width: 450px) {
+  .back--menu2 {
+    width: 300px;
+    height: 730px;
+    background-color: #fff2f4;
+    box-shadow: 5px 5px 10px black;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content--menu2 {
+    width: 240px;
+  }
+}
 .intro--menu2 {
   font-family: "FontleroyBrown-webfont";
   font-size: 4em;
@@ -261,6 +422,15 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
+@media screen and (max-width: 450px) {
+  .intro--menu2 {
+    font-family: "FontleroyBrown-webfont";
+    font-size: 2em;
+    background: linear-gradient(to right, #c67412 0%, #6e4ccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
 .part {
   display: flex;
   flex-direction: row;
@@ -269,6 +439,15 @@ h2 {
   margin-top: 60px;
 }
 
+@media screen and (max-width: 450px) {
+  .part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+}
 .subpart--menu2 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.3em;
@@ -283,6 +462,11 @@ h2 {
   color: #6e4ccc;
 }
 
+@media screen and (max-width: 450px) {
+  .subpart--menu2 {
+    font-size: 0.6em;
+  }
+}
 .courses--menu2 {
   display: flex;
   flex-direction: row;
@@ -301,6 +485,12 @@ h2 {
   color: #6e4ccc;
 }
 
+@media screen and (max-width: 450px) {
+  .courses--menu2 {
+    margin: 0px 15px;
+    font-size: 0.8em;
+  }
+}
 .back--menu3 {
   width: 700px;
   height: 1400px;
@@ -312,6 +502,18 @@ h2 {
   align-items: center;
 }
 
+@media screen and (max-width: 450px) {
+  .back--menu3 {
+    width: 300px;
+    height: 820px;
+    background-color: #f7f6f7;
+    box-shadow: 5px 5px 10px black;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .intro--menu3 {
   font-family: "DancingScript-VariableFont_wght";
   font-size: 3.6em;
@@ -320,10 +522,24 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
+@media screen and (max-width: 450px) {
+  .intro--menu3 {
+    font-family: "DancingScript-VariableFont_wght";
+    font-size: 2em;
+    background: linear-gradient(to right, #7cddf5 0%, #1740f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
 .courses--menu3 {
   margin: 0px 50px;
 }
 
+@media screen and (max-width: 450px) {
+  .courses--menu3 {
+    margin: 0px 10px;
+  }
+}
 .back--menu4 {
   width: 700px;
   height: 1400px;
@@ -335,12 +551,34 @@ h2 {
   align-items: center;
 }
 
+@media screen and (max-width: 450px) {
+  .back--menu4 {
+    width: 300px;
+    height: 860px;
+    background-color: #fdfffc;
+    box-shadow: 5px 5px 10px black;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .intro--menu4 {
   font-family: "KaushanScript-Regular";
   font-size: 3.6em;
   background: linear-gradient(to right, #15be06 0%, #90f786);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 450px) {
+  .intro--menu4 {
+    font-family: "KaushanScript-Regular";
+    font-size: 2em;
+    background: linear-gradient(to right, #15be06 0%, #90f786);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

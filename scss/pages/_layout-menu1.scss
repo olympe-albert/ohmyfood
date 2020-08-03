@@ -6,6 +6,17 @@ h2
     text-align: center;
 }
 
+@media screen and (max-width: 450px)
+{
+    h2
+    {
+        font-family: 'Metropolis-Regular';
+        font-size: 1.3em;
+        color: rgb(20, 20, 20);
+        text-align: center;
+    }   
+}
+
 .back
 {
     width: 700px;
@@ -21,6 +32,26 @@ h2
 .content
 {
     width: 560px;
+}
+
+@media screen and (max-width: 450px)
+{
+    .back
+    {
+        width: 300px;
+        height: 880px;
+        background-color: $menu1;
+        box-shadow: 5px 5px 10px black;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content
+    {
+        width: 240px;
+    }
 }
 
 .intro
@@ -51,6 +82,44 @@ h2
     justify-content: space-between;
     font-family: 'Blackjack-webfont';
     font-size: 1.2em;
+}
+
+@media screen and (max-width: 450px)
+{
+    .intro
+    {
+        font-family: 'jr!ha___-webfont';
+        font-size: 1.2em;
+        color: rgb(34, 17, 14);
+    }
+
+    .part
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        & img
+        {
+            width: 60px;
+        }
+    }
+
+    .subpart
+    {
+        font-family: 'Blackjack-webfont';
+        font-size: 0.9em; 
+    }
+
+    .courses
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: 'Blackjack-webfont';
+        font-size: 0.8em;
+    }
 }
 
 .mirror

@@ -9,16 +9,16 @@ header
 {
     background-color: $maincolor;
     width: 100%;
-    height: 80px;
+    height: 60px;
 }
 
 h1
 {
     font-family: 'Metropolis-ExtraBold';
-    font-size: 2.6em;
+    font-size: 2.3em;
     text-align: center;
     margin: 0px;
-    padding-top: 14px;
+    padding-top: 10px;
 }
 
 h1 a
@@ -32,7 +32,7 @@ h1 a
 main
 {
     background-color: $white;
-    padding: 30px 70px;
+    padding: 30px 30px;
     max-width: 900px;
     margin: auto;
 }
@@ -68,6 +68,51 @@ main
         &--4
         {
             background-color: $menu4;
+        }
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    main
+    {
+        background-color: $white;
+        padding: 20px 40px;
+        max-width: 900px;
+        margin: auto;
+    }
+    .menu
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        &__front
+        {
+            height: 170px;
+            min-width: 120px;
+            max-width: 120px;
+            box-shadow: 5px 5px 10px black;
+            margin: 8px 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &--1
+            {
+                background-color: $menu1;
+            }
+            &--2
+            {
+                background-color: $menu2;
+            }
+            &--3
+            {
+                background-color: $menu3;
+            }
+            &--4
+            {
+                background-color: $menu4;
+            }
         }
     }
 }
@@ -136,33 +181,93 @@ main
     }
 }
 
+@media screen and (max-width: 450px)
+{
+    .title
+    {
+        &--1
+        {
+            font-family: 'jr!ha___-webfont';
+            font-size: 0.8em;
+            color: rgb(34, 17, 14);
+        }
+        &--2
+        {
+            font-family: 'FontleroyBrown-webfont';
+            font-size: 1.1em;
+            background: linear-gradient(to right, rgb(247, 177, 72) 0%, rgb(146, 23, 247));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &--3
+        {
+            font-family: 'DancingScript-VariableFont_wght';
+            font-size: 0.8em;
+            background: linear-gradient(to right, rgb(124, 221, 245) 0%, rgb(23, 64, 247));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &--4
+        {
+            font-family: 'KaushanScript-Regular';
+            font-size: 0.8em;
+            background: linear-gradient(to right, rgb(21, 190, 6) 0%, rgb(144, 247, 134));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .subtitle
+    {
+        font-family: 'Metropolis-Regular';
+        font-size: 0.8em;
+        &--1
+        {
+            color: rgb(34, 17, 14);
+        }
+        &--2
+        {
+            color: rgb(247, 177, 72);
+        }
+        &--3
+        {
+            color: rgb(23, 64, 247);
+        }
+        &--4
+        {
+            color: rgb(21, 190, 6);
+        }
+    }
+}
+
 .bouton-next
 {
     margin: auto;
-    margin-top: 40px;
+    margin-top: 14px;
+    margin-bottom: 14px;
     width: 200px;
-    height: 45px;
+    height: 32px;
     background-color: $maincolor;
     border-radius: 15px;
     position: relative;
+    & p
+    {
+        font-family: 'Metropolis-Regular';
+        font-size: 1em;
+        color: $yellow;
+        position: absolute;
+        left: 20px;
+        top: -8px;
+    }
 }
 
-.bouton-next p
-{
-    font-family: 'Metropolis-Regular';
-    font-size: 1em;
-    color: $yellow;
-    position: absolute;
-    left: 20px;
-    top: 0px;
-}
 
 /** footer **/
 
 footer
 {
     width: 100%;
-    height: 60px;
+    height: 35px;
     background-color: $maincolor;
     display: flex;
     flex-direction: row;
@@ -173,7 +278,7 @@ footer
 
 .bouton-footer
 {
-    margin: 15px;
+    margin: 2px 10px;
 }
 
 .bouton-footer p

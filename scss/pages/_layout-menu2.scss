@@ -6,6 +6,17 @@ h2
     text-align: center;
 }
 
+@media screen and (max-width: 450px)
+{
+    h2
+    {
+        font-family: 'Metropolis-Regular';
+        font-size: 1.3em;
+        color: rgb(20, 20, 20);
+        text-align: center;
+    }   
+}
+
 .back--menu2
 {
     width: 700px;
@@ -23,6 +34,26 @@ h2
     width: 660px;
 }
 
+@media screen and (max-width: 450px)
+{
+    .back--menu2
+    {
+        width: 300px;
+        height: 730px;
+        background-color: $menu2;
+        box-shadow: 5px 5px 10px black;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content--menu2
+    {
+        width: 240px;
+    }
+}
+
 .intro--menu2
 {
     font-family: 'FontleroyBrown-webfont';
@@ -32,6 +63,18 @@ h2
 	-webkit-text-fill-color: transparent;
 }
 
+@media screen and (max-width: 450px)
+{
+    .intro--menu2
+    {
+        font-family: 'FontleroyBrown-webfont';
+        font-size: 2em;
+        background: linear-gradient(to right, rgb(198, 116, 18) 0%, rgb(110, 76, 204));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
 .part
 {
     display: flex;
@@ -39,6 +82,18 @@ h2
     justify-content: space-between;
     align-items: center;
     margin-top: 60px;
+}
+
+@media screen and (max-width: 450px)
+{
+    .part
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
 }
 
 .subpart--menu2
@@ -56,6 +111,14 @@ h2
     &--3
     {
         color: rgb(110, 76, 204);
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    .subpart--menu2
+    {
+        font-size: 0.6em;
     }
 }
 
@@ -78,5 +141,14 @@ h2
     &--3
     {
         color: rgb(110, 76, 204);
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    .courses--menu2
+    {
+        margin: 0px 15px;
+        font-size: 0.8em;
     }
 }
