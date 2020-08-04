@@ -254,11 +254,13 @@ footer {
 .bouton-footer {
   margin: 2px 10px;
 }
-
 .bouton-footer p {
   font-family: "Metropolis-Regular";
   font-size: 0.7em;
   color: #fbc137;
+}
+.bouton-footer a {
+  text-decoration: none;
 }
 
 h2 {
@@ -578,6 +580,31 @@ h2 {
     background: linear-gradient(to right, #15be06 0%, #90f786);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+}
+section {
+  width: 900px;
+  padding: 30px;
+  margin: auto;
+  font-family: "Metropolis-Regular";
+}
+section h1 {
+  text-align: center;
+  font-size: 2.2em;
+  color: #488c74;
+}
+section h2 {
+  font-size: 1.4em;
+  color: black;
+}
+section p {
+  font-size: 1em;
+  color: black;
+}
+
+@media screen and (max-width: 450px) {
+  section {
+    width: 300px;
   }
 }
 

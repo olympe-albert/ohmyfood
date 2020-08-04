@@ -279,12 +279,16 @@ footer
 .bouton-footer
 {
     margin: 2px 10px;
+    & p
+    {
+        font-family: 'Metropolis-Regular';
+        font-size: 0.7em;
+        color: $yellow;
+    }
+    & a
+    {
+        text-decoration: none;
+    }
 }
 
-.bouton-footer p
-{
-    font-family: 'Metropolis-Regular';
-    font-size: 0.7em;
-    color: $yellow;
-}
 
