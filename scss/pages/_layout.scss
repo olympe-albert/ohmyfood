@@ -123,6 +123,14 @@ main
     display: flex;
     flex-direction: column;
     align-items: center;
+    transform: scale(1);
+    opacity: 1;
+    transition: all 400ms;
+    &:hover 
+    {
+        transform: scale(1.2);
+        opacity: 0.3;
+    }
 }
 
 .title
@@ -258,6 +266,42 @@ main
         position: absolute;
         left: 20px;
         top: -8px;
+    }
+}
+
+@keyframes points
+{
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.susp
+{
+    position: absolute;
+    right: 18px;
+    top: 12px;
+    width: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__point
+    {
+        background-color: $yellow;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        animation: points 1000ms infinite;
+        animation-direction: alternate;
+        @for $i from 1 through 3 {
+            &--#{$i} {
+                animation-delay: 1000ms / 3 * $i;
+             }
+        }
+
     }
 }
 
