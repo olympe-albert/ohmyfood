@@ -60,13 +60,14 @@ main
     .menu
     {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         &__front
         {
-            height: 170px;
-            min-width: 120px;
-            max-width: 120px;
+            height: 320px;
+            min-width: 230px;
+            max-width: 230px;
             box-shadow: 5px 5px 10px black;
             margin: 8px 4px;
             display: flex;
@@ -172,13 +173,13 @@ main
         &--1
         {
             font-family: 'jr!ha___-webfont';
-            font-size: 0.8em;
+            font-size: 1.1em;
             color: rgb(34, 17, 14);
         }
         &--2
         {
             font-family: 'FontleroyBrown-webfont';
-            font-size: 1.1em;
+            font-size: 1.4em;
             background: linear-gradient(to right, rgb(247, 177, 72) 0%, rgb(146, 23, 247));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -186,7 +187,7 @@ main
         &--3
         {
             font-family: 'DancingScript-VariableFont_wght';
-            font-size: 0.8em;
+            font-size: 1.1em;
             background: linear-gradient(to right, rgb(124, 221, 245) 0%, rgb(23, 64, 247));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -194,7 +195,7 @@ main
         &--4
         {
             font-family: 'KaushanScript-Regular';
-            font-size: 0.8em;
+            font-size: 1.1em;
             background: linear-gradient(to right, rgb(21, 190, 6) 0%, rgb(144, 247, 134));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
