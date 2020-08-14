@@ -189,6 +189,11 @@ main {
   opacity: 0.3;
 }
 
+@media screen and (max-width: 450px) {
+  .link img {
+    width: 40px;
+  }
+}
 .title--1 {
   font-family: "jr!ha___-webfont";
   font-size: 1.9em;
@@ -349,7 +354,7 @@ h2 {
 }
 .back {
   width: 700px;
-  height: 1400px;
+  height: 1350px;
   background-color: #fad7d3;
   box-shadow: 5px 5px 10px black;
   margin: auto;
@@ -365,7 +370,7 @@ h2 {
 @media screen and (max-width: 450px) {
   .back {
     width: 300px;
-    height: 880px;
+    height: 960px;
     background-color: #fad7d3;
     box-shadow: 5px 5px 10px black;
     margin: auto;
@@ -376,6 +381,16 @@ h2 {
 
   .content {
     width: 240px;
+  }
+}
+.note {
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 450px) {
+  .note {
+    width: 40px;
+    padding-top: 20px;
   }
 }
 .intro {
@@ -451,6 +466,35 @@ h2 {
     justify-content: space-between;
     font-family: "Blackjack-webfont";
     font-size: 0.8em;
+  }
+}
+.foot-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.foot-menu__img {
+  padding: 10px;
+}
+.foot-menu p {
+  font-family: "jr!ha___-webfont";
+  font-size: 1.4em;
+  color: #22110e;
+}
+
+@media screen and (max-width: 450px) {
+  .foot-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .foot-menu__img {
+    padding: 10px;
+  }
+  .foot-menu p {
+    font-family: "jr!ha___-webfont";
+    font-size: 0.9em;
+    color: #22110e;
   }
 }
 .mirror {
@@ -583,7 +627,7 @@ h2 {
 }
 .back--menu3 {
   width: 700px;
-  height: 1400px;
+  height: 1200px;
   background-color: #f7f6f7;
   box-shadow: 5px 5px 10px black;
   margin: auto;

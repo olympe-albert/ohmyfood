@@ -20,7 +20,7 @@ h2
 .back
 {
     width: 700px;
-    height: 1400px;
+    height: 1350px;
     background-color: $menu1;
     box-shadow: 5px 5px 10px black;
     margin: auto;
@@ -39,7 +39,7 @@ h2
     .back
     {
         width: 300px;
-        height: 880px;
+        height: 960px;
         background-color: $menu1;
         box-shadow: 5px 5px 10px black;
         margin: auto;
@@ -51,6 +51,20 @@ h2
     .content
     {
         width: 240px;
+    }
+}
+
+.note
+{
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 450px)
+{
+    .note
+    {
+        width: 40px;
+        padding-top: 20px;
     }
 }
 
@@ -144,6 +158,43 @@ h2
         justify-content: space-between;
         font-family: 'Blackjack-webfont';
         font-size: 0.8em;
+    }
+}
+
+.foot-menu
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &__img
+    {
+        padding:10px;
+    }
+    & p 
+    {
+        font-family: 'jr!ha___-webfont';
+        font-size: 1.4em;
+        color: rgb(34, 17, 14);
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    .foot-menu
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        &__img
+        {
+            padding:10px;
+        }
+        & p 
+        {
+            font-family: 'jr!ha___-webfont';
+            font-size: 0.9em;
+            color: rgb(34, 17, 14);
+        }
     }
 }
 

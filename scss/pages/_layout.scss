@@ -110,6 +110,14 @@ main
     }
 }
 
+@media screen and (max-width: 450px)
+{
+    .link img
+    {
+        width: 40px;
+    }
+}
+
 .title
 {
     &--1
