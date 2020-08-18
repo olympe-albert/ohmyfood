@@ -10,12 +10,42 @@
     align-items: center;
 }
 
-@media screen and (max-width: 450px)
+@media screen and (max-width: 375px)
+{
+    .back--menu3
+    {
+        width: 220px;
+        height: 620px;
+        background-color: $menu3;
+        box-shadow: 5px 5px 10px black;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 568px)
 {
     .back--menu3
     {
         width: 300px;
         height: 820px;
+        background-color: $menu3;
+        box-shadow: 5px 5px 10px black;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 568px) and (max-width: 750px)
+{
+    .back--menu3
+    {
+        width: 460px;
+        height: 800px;
         background-color: $menu3;
         box-shadow: 5px 5px 10px black;
         margin: auto;
@@ -34,7 +64,19 @@
 	-webkit-text-fill-color: transparent;
 }
 
-@media screen and (max-width: 450px)
+@media screen and (max-width: 375px)
+{
+    .intro--menu3
+    {
+        font-family: 'DancingScript-VariableFont_wght';
+        font-size: 1.7em;
+        background: linear-gradient(to right, rgb(124, 221, 245) 0%, rgb(23, 64, 247));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 568px)
 {
     .intro--menu3
     {
@@ -46,12 +88,32 @@
     }
 }
 
+@media screen and (min-width: 568px) and (max-width: 750px)
+{
+    .intro--menu3
+    {
+        font-family: 'DancingScript-VariableFont_wght';
+        font-size: 1.9em;
+        background: linear-gradient(to right, rgb(124, 221, 245) 0%, rgb(23, 64, 247));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
 .courses--menu3
 {
     margin: 0px 50px;
 }
 
-@media screen and (max-width: 450px)
+@media screen and (max-width: 568px)
+{
+    .courses--menu3
+    {
+        margin: 0px 10px;
+    }
+}
+
+@media screen and (min-width: 568px) and (max-width: 750px)
 {
     .courses--menu3
     {

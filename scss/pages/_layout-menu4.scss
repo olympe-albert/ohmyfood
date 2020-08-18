@@ -10,11 +10,41 @@
     align-items: center;
 }
 
-@media screen and (max-width: 450px)
+@media screen and (max-width: 375px)
+{
+    .back--menu4
+    {
+        width: 220px;
+        height: 720px;
+        background-color: $menu4;
+        box-shadow: 5px 5px 10px black;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 568px)
 {
     .back--menu4
     {
         width: 300px;
+        height: 860px;
+        background-color: $menu4;
+        box-shadow: 5px 5px 10px black;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 568px) and (max-width: 750px)
+{
+    .back--menu4
+    {
+        width: 460px;
         height: 860px;
         background-color: $menu4;
         box-shadow: 5px 5px 10px black;
@@ -34,12 +64,36 @@
 	-webkit-text-fill-color: transparent;
 }
 
-@media screen and (max-width: 450px)
+@media screen and (max-width: 375px)
+{
+    .intro--menu4
+    {
+        font-family: 'KaushanScript-Regular';
+        font-size: 1.7em;
+        background: linear-gradient(to right, rgb(21, 190, 6) 0%, rgb(144, 247, 134));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 568px)
 {
     .intro--menu4
     {
         font-family: 'KaushanScript-Regular';
         font-size: 2em;
+        background: linear-gradient(to right, rgb(21, 190, 6) 0%, rgb(144, 247, 134));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@media screen and (min-width: 568px) and (max-width: 750px)
+{
+    .intro--menu4
+    {
+        font-family: 'KaushanScript-Regular';
+        font-size: 1.9em;
         background: linear-gradient(to right, rgb(21, 190, 6) 0%, rgb(144, 247, 134));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;

@@ -9,8 +9,13 @@ main
 {
     background-color: $white;
     padding: 30px 30px;
-    max-width: 900px;
+    max-width: 1100px;
     margin: auto;
+}
+
+section
+{
+    padding: 0px;
 }
 
 .menu
@@ -23,6 +28,7 @@ main
     {
         height: 560px;
         min-width: 400px;
+        max-width: 400px;
         box-shadow: 5px 5px 10px black;
         margin: 20px 0px;
         display: flex;
@@ -53,7 +59,7 @@ main
     main
     {
         background-color: $white;
-        padding: 20px 40px;
+        padding: 10px 40px;
         max-width: 900px;
         margin: auto;
     }
